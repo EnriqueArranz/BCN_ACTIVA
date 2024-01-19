@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/SPRINT_3_TASCA_1_SINGLETON/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="singelton" />
+        <module name="CheatSheet" />
+        <module name="SPRINT_3_TASCA_1_ABSTRACT_FACTORY" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ear" target="1.5" />
+      <module name="ejbs" target="1.7" />
+      <module name="logging" target="1.7" />
+      <module name="primary-source" target="1.7" />
+      <module name="project" target="1.5" />
+      <module name="projects" target="1.5" />
+      <module name="servlet" target="1.7" />
+      <module name="servlets" target="1.5" />
+      <module name="singelton" target="1.7" />
+      <module name="Singleton" target="21" />
+      <module name="SPRINT_3_TASCA_1_PATTERNS" target="21" />
+      <module name="SPRINT_3_TASCA_1_PATTERNS_copy" target="21" />
+      <module name="SPRINT_3_TASCA_1_SINGLETON" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
