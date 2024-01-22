@@ -18,7 +18,7 @@ public class AddressSpain implements Address {
 
     @Override
     public void print() {
-        System.out.println("Address [city=" + city + ", street=" + street + ", num=" + num + ", floor=" + floor + ", door="
-                + door + ", COUNTRY=" + COUNTRY + "]");
+        System.out.println("Address [city=" + city.toUpperCase() + ", street=" + street.toUpperCase() + ", num=" + num + ", floor=" + floor + ", door="
+                + door + ", COUNTRY=" + COUNTRY.toUpperCase() + "]");
     }
 }

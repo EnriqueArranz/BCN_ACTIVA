@@ -8,7 +8,7 @@ public class Register {
         tel = newFactory.createPhone();
         address = newFactory.createAddress();
     }
-    public print(){
+    public void print(){
         tel.print();
         address.print();
     }

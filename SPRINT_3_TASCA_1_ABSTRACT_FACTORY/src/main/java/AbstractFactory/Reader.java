@@ -7,7 +7,7 @@ public class Reader {
 
     private static Scanner scanner = new Scanner(System.in);
 
-    public static String askString(String message)
+    public static String askString(String message) throws InputMismatchException
     {
         System.out.println(message);
 
