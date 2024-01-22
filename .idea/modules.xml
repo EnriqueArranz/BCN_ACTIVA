@@ -12,6 +12,8 @@
       <module fileurl="file://$PROJECT_DIR$/SPRINT_1_TASCA_6_GENERIC_METHODS/SPRINT_1_TASCA_6_GENERIC_METHODS.iml" filepath="$PROJECT_DIR$/SPRINT_1_TASCA_6_GENERIC_METHODS/SPRINT_1_TASCA_6_GENERIC_METHODS.iml" />
       <module fileurl="file://$PROJECT_DIR$/SPRINT_1_TASCA_7_ANNOTATIONS/SPRINT_1_TASCA_7_ANNOTATIONS.iml" filepath="$PROJECT_DIR$/SPRINT_1_TASCA_7_ANNOTATIONS/SPRINT_1_TASCA_7_ANNOTATIONS.iml" />
       <module fileurl="file://$PROJECT_DIR$/SPRINT_1_TASCA_8_LAMBDAS/SPRINT_1_TASCA_8_LAMBDAS.iml" filepath="$PROJECT_DIR$/SPRINT_1_TASCA_8_LAMBDAS/SPRINT_1_TASCA_8_LAMBDAS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SPRINT_3_TASCA_1_SINGLETON/src/main/main.iml" filepath="$PROJECT_DIR$/SPRINT_3_TASCA_1_SINGLETON/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SPRINT_3_TASCA_1_SINGLETON/src/test/test.iml" filepath="$PROJECT_DIR$/SPRINT_3_TASCA_1_SINGLETON/src/test/test.iml" />
     </modules>
   </component>
 </project>
