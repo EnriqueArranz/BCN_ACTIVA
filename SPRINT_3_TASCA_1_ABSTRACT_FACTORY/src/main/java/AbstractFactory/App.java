@@ -1,10 +1,13 @@
 package AbstractFactory;
 
+import java.util.ArrayList;
+
 public class App {
     public static void main(String[] args) {
         AgendaFactory spa = new SpainFactory();
         AgendaFactory uk = new EnglandFactory();
         ListOfRegisters agenda = new ListOfRegisters();
+        ArrayList mylist = new ArrayList<>();
         boolean quit = false;
         do {
             int option = Reader.askInt("Choose your country: \n" +

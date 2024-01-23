@@ -12,6 +12,8 @@
         <module name="singelton" />
         <module name="CheatSheet" />
         <module name="SPRINT_3_TASCA_1_ABSTRACT_FACTORY" />
+        <module name="UndoSingleton" />
+        <module name="Observer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,7 +30,6 @@
       <module name="SPRINT_3_TASCA_1_PATTERNS" target="21" />
       <module name="SPRINT_3_TASCA_1_PATTERNS_copy" target="21" />
       <module name="SPRINT_3_TASCA_1_SINGLETON" target="21" />
-      <module name="UndoSingleton" target="21" />
     </bytecodeTargetLevel>
   </component>
 </project>
