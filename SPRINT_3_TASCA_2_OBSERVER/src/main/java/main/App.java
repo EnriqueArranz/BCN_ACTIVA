@@ -5,10 +5,11 @@ package main;
  */
 public class App {
     public static void main(String[] args) {
-        EjemploObservableTradeAgent observable = new EjemploObservableTradeAgent();
-        observable.addObserver(new ObserverTradeAgency1());
-        observable.addObserver(new ObserverTradeAgency2());
-        
-        observable.notifyObservers();
+        ObservableTradeAgent agent1 = new ObservableTradeAgent();
+
+        agent1.addObserver(new ObserverTradeAgency1());
+        agent1.addObserver(new ObserverTradeAgency2());
+        agent1.addObserver(new ObserverTradeAgency3());
+        agent1.notifyObservers();
     }
 }

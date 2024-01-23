@@ -3,7 +3,7 @@ package main;
 import java.util.HashSet;
 import java.util.Set;
 
-public class EjemploObservableTradeAgent implements Observable {
+public class ObservableTradeAgent implements Observable {
 
     Set<Observer>observerSet = new HashSet<>();
     @Override
