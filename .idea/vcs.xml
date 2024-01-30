@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Kata_Frases" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PROVA_NIVELL" vcs="Git" />
   </component>
 </project>
