@@ -39,6 +39,10 @@ public class Fruit {
         this.kgs = kgs;
     }
 
+    public void setStock(boolean stock) {
+        this.stock = stock;
+    }
+
     public boolean isStock() {
         return stock;
     }

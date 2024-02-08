@@ -3,6 +3,8 @@ package cat.itacademy.barcelonactiva.ArranzPuig.Enrique.s04.t02.n01.controller;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 import cat.itacademy.barcelonactiva.ArranzPuig.Enrique.s04.t02.n01.entity.Fruit;
 import cat.itacademy.barcelonactiva.ArranzPuig.Enrique.s04.t02.n01.repository.FruitRepository;
@@ -23,24 +25,58 @@ import org.springframework.web.bind.annotation.RestController;
 
 //@CrossOrigin(origins = "http://localhost:8081")
 @RestController
-@RequestMapping("/api/fruits")
+@RequestMapping("/fruita")
 public class FruitController {
-
     @Autowired
     private UserService userService;
 
-    @PostMapping()
+    // Create new fruit
+    @PostMapping("/add")
     public ResponseEntity<?> create(@RequestBody Fruit fruit) {
         return ResponseEntity.status(HttpStatus.CREATED).body(userService.save(fruit));
     }
 
-    @GetMapping("/{id}")
+    // Create fruit by id
+    @GetMapping("/getOne/{id}")
     public ResponseEntity<?> read(@PathVariable("id") long fruitId) {
         Optional<Fruit> oFruit = userService.findById(fruitId);
         if (!oFruit.isPresent()) {
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(oFruit);
+    }
+
+    // Update a fruit
+    @PutMapping("/update/{id}")
+    public ResponseEntity<?> update(@RequestBody Fruit fruitDetails, @PathVariable("id") long fruitId) {
+        Optional<Fruit> oFruit = userService.findById(fruitId);
+        if (!oFruit.isPresent()) {
+            return ResponseEntity.notFound().build();
+        }
+        oFruit.get().setTitle(fruitDetails.getTitle());
+        oFruit.get().setKgs(fruitDetails.getKgs());
+        oFruit.get().setStock(fruitDetails.isInStock());
+        return ResponseEntity.status(HttpStatus.CREATED).body(userService.save(oFruit.get()));
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?> delete(@PathVariable(value = "id") long fruitId) {
+//SE PUEDE HACER SIN CREAR EL OPTIONAL
+        //        Optional<Fruit> oFruit = userService.findById(fruitId);
+        if (userService.findById(fruitId).isPresent()) {
+            return ResponseEntity.notFound().build();
+        }
+        userService.deleteById(fruitId);
+        return ResponseEntity.ok().build();
+    }
+
+    // Read all fruits
+    @GetMapping
+    public List<Fruit> readAll() {
+        List<Fruit> fruits = StreamSupport
+                .stream(userService.findAll().spliterator(), false)
+                .collect(Collectors.toList());
+        return fruits;
     }
 }
 //    @PutMapping("/fruits/{id}")
