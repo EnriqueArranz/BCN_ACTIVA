@@ -108,6 +108,6 @@ public class CorteIrlandes {
     public void showCatalogWithQuantities() {
         List<Product> productList = new ArrayList<>(stock.getProductList().keySet());
         productList.sort(Comparator.comparingInt(Product::getId));
-        productList.forEach(product -> System.out.println(product + "Quantity: " + stock.getProductList().get(product) + "\n"));
+        productList.forEach(product -> System.out.println(product.toString() + " Quantity: " + stock.getProductList().get(product) + "\n"));
     }
 }

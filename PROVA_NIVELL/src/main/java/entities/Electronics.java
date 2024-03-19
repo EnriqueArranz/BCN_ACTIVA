@@ -42,4 +42,18 @@ public class Electronics extends Product {
     public void setGaranty(Date garanty) {
         this.garanty = garanty;
     }
+
+    @Override
+    public String toString() {
+        return "Electronics{" +
+                "resolution=" + resolution +
+                ", battery=" + battery +
+                ", garanty=" + garanty +
+                ", id=" + id +
+                ", name='" + name + '\'' +
+                ", brand='" + brand + '\'' +
+                ", price=" + price +
+                ", salePercentage=" + salePercentage +
+                '}';
+    }
 }

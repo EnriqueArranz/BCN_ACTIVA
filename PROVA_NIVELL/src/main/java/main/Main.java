@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) throws ProductNotFoundException {
         Stock stock = new Stock();
         CorteIrlandes corteIrlandes = new CorteIrlandes("miCorteIrlandes", stock);
-
+        corteIrlandes.initializeStock();
         boolean quit = false;
         do {
             int option;

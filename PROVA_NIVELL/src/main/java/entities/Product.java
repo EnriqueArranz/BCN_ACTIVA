@@ -49,4 +49,15 @@ public abstract class Product {
             counter = _id;
         }
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", brand='" + brand + '\'' +
+                ", price=" + price +
+                ", salePercentage=" + salePercentage +
+                '}';
+    }
 }

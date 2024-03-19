@@ -39,7 +39,7 @@ public class Clothes extends Product{
 
     @Override
     public String toString() {
-        return "Ropa{" +
+        return "Clothes{" +
                 "size=" + size +
                 ", type='" + type + '\'' +
                 ", material='" + material + '\'' +
